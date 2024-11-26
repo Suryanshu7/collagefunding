@@ -1,0 +1,713 @@
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* General Body Styles */
+        body {  
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background-color: transparent;/*Past background color: #47a7a7*/ /* Aesthetic light teal */
+            height: 60px; /* Fixed navbar height */
+            border-radius: 8px; /* Rounded corners for the navbar */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for floating effect */
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Vertically center the items */
+            padding: 0 20px; /* Padding inside navbar */
+            margin-left: 20px; /* Left margin */
+            margin-right: 20px; /* Right margin */
+            
+        }
+        .navbar:hover{
+            background-color: transparent;
+            
+        }
+        /* Logo */
+        .navbar .logo h1 {
+            color: #667 ;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+        
+        /* Navigation Links */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .nav-links li {
+            display: inline;
+             
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color:#666;
+            font-size: 1rem;
+            font-weight: 900;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #003b5c; /* Deep Blue on hover */
+            transform: translateY(20px); /* Subtle lift effect */
+              
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            padding-left: 20px;  /* Add left padding to sections */
+            padding-right: 20px; /* Add right padding to sections */
+        }
+        
+        /* About Section */
+        .about-section {
+            background-color: #fff;
+            color: #333;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding-left: 20px;  /* Add left padding */
+            padding-right: 20px; /* Add right padding */
+        }
+        
+        .about-section h2 {
+            font-size: 2.5rem;
+            color: #003b5c; /* Deep Blue */
+            margin-bottom: 20px;
+        }
+        
+        .about-section p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        .about{
+            text-decoration: none;
+            
+        }
+        .about:hover{
+            transform: translateX(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            
+        }
+       
+        /* Mission Section */
+        .mission-section {
+            background-color: #003b5c;
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding-left: 20px;  /* Add left padding */
+            padding-right: 20px; /* Add right padding */
+        }
+        
+        .mission-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .mission-section p {
+            font-size: 1.1rem;
+        }
+        /*Wellcome line 
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }*/
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            filter: blur(2px) brightness(00.9rem);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+        #welcome {
+            color: #666;
+            font-size: 4em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        del{
+            color:#007BFF;
+        }
+        #miniwelcome{  
+            color: #333;                        /*miniwelcome for Paragraph*/
+            font-size: 1.5em;
+            animation: fadeIn 2s ease-in-out 1.5s;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007BFF;
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            animation: fadeIn 2s ease-in-out 2s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        
+        /* Fund Allocation Section */
+        .funds-section {
+            background-color: #e0f7fa;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding-left: 20px;  /* Add left padding */
+            padding-right: 20px; /* Add right padding */
+        }
+        
+        .funds-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #003b5c;
+        }
+        
+        .funds-details {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+        }
+        
+        .fund-item {
+            background-color: #fff;
+            padding: 20px;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+            padding-left: 20px;  /* Add left padding */
+            padding-right: 20px; /* Add right padding */
+        }
+        
+        .fund-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .fund-item h3 {
+            font-size: 1.8rem;
+            color: #003b5c;
+        }
+        
+        .fund-item p {
+            font-size: 1rem;
+            color: #666;
+        }
+        
+        /* Donation Section */
+        .donation-section {
+            background-color: #47a7a7;
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding-left: 20px;  /* Add left padding */
+            padding-right: 20px; /* Add right padding */
+        }
+        
+        .donation-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .donation-section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-btn {
+            background-color: #003b5c; /* Deep Blue for the button */
+            color: #fff;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .cta-btn:hover {
+            background-color: #47a7a7; /* Teal on hover */
+            transform: translateY(-3px); /* Subtle lift effect */
+        }
+        
+        /* Contact Us Section */
+        /*
+        .contact-us-section {
+            background-color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            padding-left: 20px;  /* Add left padding 
+            padding-right: 20px; /* Add right padding 
+        }
+        
+        .contact-us-section h2 {
+            font-size: 2.5rem;
+            color: #003b5c;
+            margin-bottom: 20px;
+        }
+        
+        .contact-us-section p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        
+        /* Form Styling 
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            width: 100%;
+            text-align: left;
+        }
+        
+        .form-group label {
+            font-size: 1rem;
+            color: #003b5c;
+            margin-bottom: 5px;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            color: #333;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #47a7a7; /* Focus color 
+            outline: none;
+        }
+        
+        /* Submit Button 
+        .cta-btn {
+            background-color: #003b5c; /* Deep Blue 
+            color: #fff;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .cta-btn:hover {
+            background-color: #47a7a7; /* Teal on hover 
+            transform: translateY(-3px); /* Lift effect 
+        }*/
+
+        /* Contact Us Section Styles */
+.contact-us-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.contact-us-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-us-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+}
+
+.contact-form button.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button.cta-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Form Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+        /* Footer */
+        footer {
+            background-color: #003b5c;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1rem;
+            margin-top: 40px;
+            border-radius: 8px;
+            padding-left: 20px; 
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px 15px; /* Reduce navbar padding */
+            }
+        
+            .nav-links {
+                flex-direction: column; /* Stack links vertically */
+                gap: 15px;
+            }
+        
+            .funds-details {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .fund-item {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        
+            .contact-form {
+                width: 90%;
+            }
+        
+            .form-group input,
+            .form-group textarea {
+                width: 100%;
+            }
+        
+            section {
+                margin: 0 5%; /* Reduced margin for smaller screens */
+            }
+        
+            footer {
+                font-size: 0.9rem; /* Slightly smaller text for footer */
+            }
+        }
+#payment{
+         margin: none;
+         margin-top: 100px;
+}
+ /* Team Section Styles */
+#team {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+#team h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#team p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Team Members Flexbox */
+/*
+.teammembers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin: 15px 0 10px 15px;
+}
+
+.team-member p {
+    margin: 0 15px 15px 15px;
+    color: #333;
+}
+
+@media (min-width: 768px) {
+    .team-member {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 767px) {
+    .team-member {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        flex: 1 1 calc(100% - 20px);
+    }
+}
+
+/* Animation */
+.teammember img {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Meet our Team*/
+/* Team Section Styles */
+#team {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+#team h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#team p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Team Members Flexbox */
+.teammembers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.team-member {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    flex-basis: calc(50% - 20px); /* Two items per row */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto 10px;
+    display: block;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin: 15px 0 10px 15px;
+}
+
+.team-member p {
+    margin: 0 15px 15px 15px;
+    color: #333;
+}
+
+/* Animation */
+.team-member img {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.meet{
+        text-align: center;
+        font-size: 1.5em; /* Adjust the size as needed */
+        margin: 20px 0; /* Adjust the margin as needed */   
+}
+.meets{
+        text-align: center;
+        font-size: 1.2em; /* Adjust the size as needed */
+        margin: 20px 0; /* Adjust the margin as needed */
+}
+/* Initial styles for the image */
+img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the image */
+img:hover {
+    transform: scale(2); /* Expands the image to 5 times its original size */
+}
+/* Style for the clickable image */
+a img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, margin-top 0.3s ease-in-out;
+}
+
+a img:hover {
+    transform: scale(2); /* Expands the image to 5 times its original size */
+    margin-top: 20px; /* Moves the image slightly down */
+}
+#scholarships{
+    text-decoration:none;
+}
+#scholorships:hover{
+    transform:scale(11.2em) ;
+}
+#Infrastructure{
+    text-decoration: none;
+}
+#Infrastructure{
+    transform: scale3d(4);
+}
+#ResearchDevelopment{
+    text-decoration: none;
+    color:rgb(41, 38, 126);
+}
+#ResearchDevelopment:hover{
+    transform:scaleX(4);
+}
+#assistance{
+    text-decoration: none;
+    color: #ffffff;
+}

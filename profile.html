@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signuplogin.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+     
+         
+
+<section id="profile" class="section" style="display: none;">
+    <h2>Your Profile</h2>
+    <p>Welcome, <span id="userName"></span>!</p>
+    <form id="profileForm">
+        <label for="profileName">Name:</label>
+        <input type="text" id="profileName" name="profileName" required>
+        
+        <label for="profileMobile">Mobile Number:</label>
+        <input type="text" id="profileMobile" name="profileMobile" required>
+        
+        <label for="profileEmail">Email:</label>
+        <input type="email" id="profileEmail" name="profileEmail" required>
+        
+        <button type="submit">Update Profile</button>
+    </form>
+    
+    <h3>Notifications</h3>
+    <ul id="notifications"></ul>
+</section>
+
+
+
+         
+        <script src="profile.js"></script>
+</body>
+</html>

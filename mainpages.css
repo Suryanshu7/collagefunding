@@ -1,0 +1,201 @@
+{
+    background-color:#b2e3e4;
+    padding: auto;
+    margin: none;
+}
+
+        /* Add some basic styling to make the page responsive 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            color: #ccc;
+        }
+        
+        /* Make the navigation menu responsive 
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                padding: 10px;
+                border-bottom: 1px solid #333;
+            }
+        }
+        
+        /* Make the content section responsive 
+        @media (max-width: 768px) {
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        
+        /* Make the footer section responsive *
+        @media (max-width: 768px) {
+            footer {
+                text-align: center;
+            }
+            footer p {
+                margin-bottom: 10px;
+            }
+        }*/
+#header{
+    padding: auto;
+    margin: auto;
+}
+#nav{
+    margin: none;
+    margin-left: 10px;
+    margin-right: 3px;
+    margin-top: none;
+    margin-bottom:30px;
+    
+    
+}
+
+#money{ 
+    margin: none;
+    margin: 12px;
+    margin-left:30px;
+    text-align: center;
+    font-weight:bolder;
+    text-align: left;
+    color: red;
+    font-size: 50px;
+}
+#Notice{
+    margin: none;
+    margin: 12px;
+    margin-left:700px;
+    margin-top: none;
+    padding: none;
+    text-align: center;
+    font-weight:bolder;
+    text-align: left;
+}
+#Fund{
+    margin: none;
+    margin: 12px;
+     margin-left:10px;
+    text-align: center;
+    font-weight:bolder;
+    text-align: left;
+}
+#Sign{
+    margin: none;
+    margin: 12px;
+    margin-left:250px;
+    margin-right:3px;
+    text-align: center;
+    font-weight:bolder;
+    text-align: left;
+}
+#Register{
+    margin: none;
+    margin: 12px;
+    text-align: center;
+    font-weight:bold;
+    text-align: left;
+}
+#Notice,#Fund,#Sign,#register{
+    text-decoration: none;
+ 
+}
+#nav2{
+    margin: none;
+    margin-left: 10px;
+    margin-right: 3px;
+    margin-top: none;
+    margin-bottom:30px;
+}
+marquee{
+    font-size: 30px;
+}
+h1{
+    margin: none;
+    margin-left:12px;
+    margin-bottom: 6px;
+}
+p1{
+    margin: none;
+    margin-left: 14px;
+
+}
+h2{
+    font-size: 32px;
+    margin: none;
+    margin-left:12px;
+    margin-bottom: 6px;
+}
+p2{
+    margin: none;
+    margin-left: 14px;
+
+}
+h3{
+    font-size: 32px;
+    margin: none;
+    margin-left:12px;
+    margin-bottom: 6px;
+}
+p3{
+    margin: none;
+    margin-left: 14px;
+
+}
+h4{
+    font-size: 32px;
+    margin: none;
+    margin-left:12px;
+    margin-bottom: 6px;
+}
+p4{
+    margin: none;
+    margin-left: 14px;
+
+}
+h5{
+    font-size: 32px;
+    margin: none;
+    margin-left:12px;
+    margin-bottom: 6px;
+}p5{
+    margin: none;
+    margin-left: 14px;
+
+}
+h6{
+    font-size: 32px;
+    margin: none;
+    margin-left:12px;
+    margin-bottom: 6px;
+}
+p6{
+    margin: none;
+    margin-left: 14px;
+
+}

@@ -1,0 +1,71 @@
+/* Reset some basic elements for better consistency across browsers */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Main section styles */
+.scholarship-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.scholarship-section h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.scholarship {
+    margin-bottom: 40px;
+}
+
+.scholarship h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.scholarship p {
+    font-size: 1.2em;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for scholarship sections */
+.scholarship:hover h2 {
+    color: #007bff;
+}
+
+.scholarship:hover p {
+    color: #000;
+}
+
+/* Animation for sections */
+.scholarship-section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
